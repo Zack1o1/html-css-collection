@@ -1,0 +1,70 @@
+.flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    /* align-items: center; */
+    gap: 1rem;
+}
+
+
+
+
+
+
+
+@media (max-width:800px) {
+    .flexbox__item {
+        flex-basis: 600px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* No need change down here */
+
+
+.title {
+    text-align: center;
+    color: rgb(27, 170, 22);
+}
+
+.flexbox-container {
+    background-color: rgba(128, 128, 128, 0.515);
+    margin: 2rem 5rem;
+    height: 460px;
+    width: 1200px;
+}
+
+.flexbox__item {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding: 2rem;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.flexbox__item-1 {
+    background-color: red;
+}
+
+.flexbox__item-2 {
+    background-color: yellow;
+}
+
+.flexbox__item-3 {
+    background-color: blue;
+}
+
+.flexbox__item-4 {
+    background-color: green;
+}

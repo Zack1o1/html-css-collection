@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lalit Rajbanshi">
+    <title>Practice HTML and CSS</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            font-family: "Roboto", sans-serif;
+
+        }
+
+        .container {
+            width: 100%;
+            max-width: fit-content;
+            margin: 0 auto;
+            padding: 2rem 4rem;
+        }
+
+        .title {
+            margin-bottom: 5rem;
+        }
+
+        .content {
+            padding-left: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            font-size: 1.3rem;
+            font-family: sans-serif;
+        }
+
+        .content__item__link {
+            text-decoration: none;
+            margin-left: .5rem;
+        }
+
+        .content__item__link:hover {
+            opacity: .8;
+        }
+
+        .content__item__link:active {
+            color: blue;
+        }
+
+        .content__item__link:visited {
+            color: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">My Practice Collection of HTML and CSS</h1>
+        <ol class="content">
+            <li class="content__item">
+                <a class="content__item__link" href="Header/Navigation/index.html">Simple Navigation</a>
+            </li>
+            <li class="content__item">
+                <a class="content__item__link" href="Header/Navigation With Logo/index.html">Navigation with Logo</a>
+            </li>
+            <li class="content__item">
+                <a class="content__item__link" href="Header/Navigation 3 row/index.html">Navigation having 3 columns</a>
+            </li>
+            <li class="content__item">
+                <a class="content__item__link" href="Flexbox/index.html">Flexbox</a>
+            </li>
+            <li class="content__item">
+                <a class="content__item__link"
+                    href="GridLayout/Grid-row_column/index.html">GridLayout-using-grid-row-column</a>
+            </li>
+            <li class="content__item">
+                <a class="content__item__link" href="GridLayout/Grid-areas/index.html">GridLayout-using-grid-areas</a>
+            </li>
+        </ol>
+    </div>
+</body>
+
+</html>

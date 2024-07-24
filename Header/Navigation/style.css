@@ -1,0 +1,42 @@
+/* 
+    Resetting the style and making it appear as box 
+*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* removing text decoration from navigation link */
+
+.navigation__list__item__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* removing list style like bullet points from navigation list  */
+
+.navigation__list__item {
+    list-style: none;
+}
+
+/* giving header a background color  */
+
+.header {
+    background-color: #000;
+}
+
+/* using flex to make the navigation_list appear as row 
+    giving gap between the items
+*/
+
+.navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: flex-end;
+    /* To place the navigation list to right side */
+    padding: 2rem;
+}
