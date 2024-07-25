@@ -1,0 +1,155 @@
+/* 
+    Resetting the style and making it appear as box 
+*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+img {
+    display: block;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+
+/* removing text decoration from navigation link */
+
+.navigation__list__item-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.list--primary {
+    margin: 0 auto;
+}
+
+
+
+/* removing list style like bullet points from navigation list  */
+
+.navigation__list__item {
+    list-style: none;
+}
+
+.list--primary .navigation__list__item:hover,
+.navigation__list__item a:focus {
+    opacity: .8;
+    outline: none;
+}
+
+.navigation__list__item .signUp {
+    background-color: #82c76b;
+}
+
+.navigation__list__item .signUp,
+.signIn {
+    padding: .5rem 1.5rem;
+    border: 2px solid #82c76b;
+    border-radius: 50px;
+    transition: all .5s ease-in-out;
+
+}
+
+.navigation__list__item .signIn {
+    border: 2px solid #82c76b;
+    transition: all .3s ease-in-out;
+}
+
+
+.navigation__list__item .signIn:hover {
+
+    background-color: #82c76b;
+    transition: all .3s ease-in-out;
+}
+
+.navigation__list__item .signUp:hover {
+
+    background-color: transparent;
+    transition: all .5s ease-in-out;
+}
+
+/*
+    making header flex
+
+*/
+
+.header {
+    background-color: #000;
+    padding: .5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+.logo__img {
+    width: 80px;
+    border-radius: 50px;
+    margin-right: 2rem;
+}
+
+/* using flex to make the navigation_list appear as row 
+    giving gap between the items
+*/
+
+.navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.list--secondary {
+    gap: 1rem;
+}
+
+.hamburger-menu{
+    color: white;
+    display: none;
+    
+}
+
+
+@media (max-width:678px) {
+    .hamburger-menu{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 2rem;
+        padding-right: 1rem;
+        
+    }
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navigation__list{
+        flex-direction: column;
+    }
+    .navigation {
+        display: none;
+        background-color: lightcoral;
+        width: 50vw;
+        height: 100vh;
+        position: absolute;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+    }
+
+
+    .list--secondary {
+        margin-top: 2rem;
+        gap: 2rem;
+    }
+}
