@@ -53,3 +53,15 @@ img {
     flex-wrap: wrap;
     gap: 2rem;
 }
+
+@media (max-width:340px){
+   .header{
+    padding: .6rem;
+   }
+   
+.navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .7rem;
+}
+}
